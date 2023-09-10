@@ -14,11 +14,12 @@ require("./connections/connection");
 
 // import routes
 const userRoute = require("./routes/user");
-
+const adminRoute = require("./routes/admin");
 
 
 // use routes
 app.use("/api/user", userRoute);
+app.use("/api/admin", adminRoute);
 
 
 // base route

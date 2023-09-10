@@ -9,6 +9,9 @@ const AdminSchema = new mongoose.Schema({
         type: String,
         required:true,
     },
+    token: {
+        type: String,
+    },
 })
 
 const Admin = mongoose.model("Admin", AdminSchema);
